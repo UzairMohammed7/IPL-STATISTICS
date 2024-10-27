@@ -1,0 +1,130 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Bree Serif', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.latest-match-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+.latest-match-container h1{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 0 #ffffff;
+}
+.latest-match-card-info {
+  background-color: #0f172a;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  /* max-width: 1200px; */
+  width: 100%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+.latest-match-info-left-info,
+.latest-match-info-right-info {
+  color: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  margin: 10px;
+}
+
+.latest-match-img-info {
+  height: 300px;
+  height: 100%;
+  width: 100%;
+  max-width: 290px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.latest-match-team-info {
+  margin: 5px 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.latest-match-date-info {
+  font-size: 25px;
+  margin-top: 5px 0;
+  color: #a0aec0;
+}
+.latest-match-venue-info,
+.latest-match-result-info {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  margin-top: 8px;
+}
+
+.latest-match-info-right-info div {
+  margin: 15px 5px;
+}
+
+.latest-match-first-inning-head-info,
+.latest-match-second-inning-head-info,
+.latest-match-MOTM-head-info,
+.latest-match-umpire-head-info {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+  color: #fbbf24;
+}
+
+.latest-match-first-inning-info,
+.latest-match-second-inning-info,
+.latest-match-MOTM-info,
+.latest-match-umpire-info {
+  font-size: 1rem;
+  color: #e2e8f0;
+}
+
+@media screen and (min-width: 576px) {
+  .latest-match-info-left-info,
+  .latest-match-info-right-info {
+    width: 45%;
+    text-align: left;
+  }
+
+  .latest-match-img-info {
+    height: 200px;
+    max-width: 220px;
+  }
+
+  .latest-match-card-info {
+    flex-direction: row;
+    padding: 40px;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .latest-match-info-left-info,
+  .latest-match-info-right-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .latest-match-img-info {
+    height: 180px;
+    margin-bottom: 20px;
+  }
+
+  .latest-match-card-info {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+  .latest-match-container h1 {
+    font-size: 2rem;
+  }
+}
